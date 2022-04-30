@@ -1,5 +1,5 @@
 # Cyber-Bootcamp-Project-1
-Cybersecurity Bootcamp ELK Stack Project 1 
+Cybersecurity Bootcamp ELK Stack Project 1 blah blah blah blah 
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
