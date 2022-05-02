@@ -13,7 +13,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 ![Metricbeat Playbook](Playbooks/metricbeat-playbook.yml)
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -27,11 +27,10 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly available, in addition to restricting inbound access to the network. 
 Both security load balancers share the work to process the incoming traffic. The advantage of the jump box allows me to close off the entire network. 
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file systems of the VMs on the network and system metrics.
-- _TODO: What does Filebeat watch for? Filebeat is for log data. 
-- _TODO: What does Metricbeat record? Metricbeat collects metrics 
+Filebeat is for log data. 
+Metricbeat collects metrics 
 
 The configuration details of each machine may be found below.
 _
