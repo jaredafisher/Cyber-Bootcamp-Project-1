@@ -68,8 +68,6 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 The playbook implements the following tasks:
 Enables and configures the docker module
 Installs Metricbeat and Filebeat
-- ...
-- ...
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
