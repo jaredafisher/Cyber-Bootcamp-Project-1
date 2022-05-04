@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![Diagram](Images/Diagram.drawio.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _________ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
 
 ![ELK Playbook](/Playbooks/ELK-Playbook.md)
 ![Filebeat Playbook](Playbooks/filebeat-playbook.yml)
@@ -30,7 +30,7 @@ Both security load balancers share the work to process the incoming traffic. The
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file systems of the VMs on the network and system metrics.
 Filebeat is for log data. 
-Metricbeat collects metrics 
+Metricbeat collects metrics. 
 
 The configuration details of each machine may be found below.
 _
@@ -66,9 +66,8 @@ A summary of the access policies in place can be found in the table below.
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because the reusable Ansible playbook does this for me. 
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
-Installs Docker.io 
-
+Enables and configures the docker module
+Installs Metricbeat and Filebeat
 - ...
 - ...
 
@@ -95,10 +94,3 @@ SSH into the control node and follow the steps below:
 - Copy the playbook file to ansible control node.
 - Update the host file to include groups and IP's. 
 - Run the playbook, and navigate to Kibana to check that the installation worked as expected.
-
-_TODO: Answer the following questions to fill in the blanks:_
-- _filebeat-playbook.yml and metricbeat-playbook.yml
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running? update
-
-
